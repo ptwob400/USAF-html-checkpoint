@@ -1,0 +1,81 @@
+/* Overall Page */
+
+/* Colors
+header-bar-dark-grey #333a3f
+header-light-grey #6c757d
+yellow-text #ffc10f
+button-blue #0f7bff
+*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr 1fr;
+    justify-items: stretch;
+}
+
+.navLabel {
+    color: whitesmoke;
+}
+
+.header {
+    grid-row: 1;
+    grid-column: 1/6;
+    background-color: #333a3f;
+    word-spacing: 10px;
+    padding: 1.5%;
+}
+
+.header a {
+    color: whitesmoke;
+    text-decoration: none; 
+}
+
+.header input {
+    float: right;
+}
+
+.header button {
+    float: right;
+    background-color: #333a3f;
+    color: #ffc10f;
+    border-color: #ffc10f;
+}
+
+.mainSection {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.mainSection button {
+    background-color: #0f7bff;
+    color: whitesmoke;
+}
+
+.mainSection2 {
+    grid-column: 1;
+    grid-row: 3;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.back {
+    grid-column: 1/6;
+    grid-row: 2;
+    background-color: #6c757d;
+    word-spacing: 2px;
+    padding: 1.5%;
+}
+
+.back a {
+    color: #ffc10f;
+    text-decoration: none; 
+}
+
+.thumbnail {
+    height: 50 px;
+    width: 100 px;
+}
